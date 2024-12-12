@@ -52,6 +52,7 @@ with tab1:
     ax.set_title('Average Bike Usage by Season')
     ax.set_xlabel('Season (1: Spring, 2: Summer, 3: Fall, 4: Winter)')
     ax.set_ylabel('Average Count')
+    ax.set_xticklabels(season_counts.index, rotation=0)
     st.pyplot(fig)
 
 # Tab 2: Hourly trends in bike usage
@@ -74,6 +75,7 @@ with tab3:
     ax.set_title('Average Bike Usage by Weather Condition')
     ax.set_xlabel('Weather (1: Clear, 2: Misty, 3: Light Snow/Rain)')
     ax.set_ylabel('Average Count')
+    ax.set_xticklabels(weather_counts.index, rotation=0)
     st.pyplot(fig)
 
 # Tab 4: Relationship between temperature and bike usage
