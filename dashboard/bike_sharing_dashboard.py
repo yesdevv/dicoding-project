@@ -4,8 +4,11 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-# Load combined dataset from local file (pre-exported from Google Colab)
-combined_df = pd.read_csv('C:/Users/Lenovo/Downloads/submission/dashboard/combined_data.csv')
+# Menentukan path relatif dari root repository
+combined_path = "dashboard/combined_data.csv"
+
+# Membaca file
+combined_df = pd.read_csv(combined_path)
 combined_df['dteday'] = pd.to_datetime(combined_df['dteday'])
 
 # Title
