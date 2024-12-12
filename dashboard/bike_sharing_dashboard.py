@@ -5,7 +5,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Menentukan path relatif dari root repository
-combined_path = "C:/Users/Lenovo/Downloads/submission/dashboard/combined_data.csv"
+combined_path = "dashboard/combined_data.csv"
 
 # Membaca file
 combined_df = pd.read_csv(combined_path)
